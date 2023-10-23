@@ -1,0 +1,38 @@
+.scroll-down {
+    position: relative;
+    display: inline-block;
+
+    &__link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__text {
+        animation: rotation 10s linear 0s infinite running normal;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    // 50% {
+    //     transform: rotate(-90deg);
+    // }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

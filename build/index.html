@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стартовый шаблон</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./fonts/CircularStd/stylesheet.css">
+	</head>
+	<body id="body">
+		<header class="header">
+    <div class="container">
+        <nav class="menu">
+            <a class="logo" href="#">
+                <img class="logo__img" src="./img/logo.svg" alt="#">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link menu__list-link--active" href="#">Home</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">About</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Packages</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">FAQ</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Community</a>
+                </li>
+            </ul>
+            <div class="menu__buttons">
+                <a class="btn-login btn" href="#">
+                    Login
+                </a>
+                <a class="btn-signup btn" href="#">
+                    Sign Up
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+		<section class="discover">
+    <div class="container">
+        <div class="discover__grid">
+            <div class="discover__desc">
+                <h1 class="discover__title">
+                    Discover your favorite place with us
+                </h1>
+                <p class="discover__subtitle">
+                    Your journey begins here with our curated travel experiences. Discover new horizons, create lasting memories, and explore the world with our expertly crafted itineraries.
+                </p>
+                <div class="discover__form">
+                    <form class="form" action="">
+    <label class="form__label" for="">
+        <span>Locations</span>
+        <input class="form__input form__input--locations" id="autoComplete" type="text" placeholder="e.g Bali, Indonesia">
+    </label>
+    <div class="form__devider"></div>
+    <label class="form__label form__label--date" for="">
+        <span>Date and time</span>
+        <input class="form__input form__input--date" id="datepicker" type="text" placeholder="MM/DD/YYYY">
+    </label>
+    
+    <button class="form__btn">
+        <img class="form__btn-icon" src="./img/discover/form/search.svg" alt="">
+    </button>
+</form>
+                </div>
+            </div>
+            <div class="discover__picture">
+                <div class="discover__picture-hint">
+                    <div class="hint-discover">
+    <div class="hint-discover__picture">
+        <img class="hint-discover__img" src="./img/discover/hint-discover/1.jpg" alt="#">
+    </div>
+    <div class="hint-discover__desc">
+        <div class="hint-discover__title">
+            Coco De Heaven
+            <span class="hint-discover__rating">
+                4.5
+            </span>
+        </div>
+        <div class="hint-discover__price">
+            <span class="muted">Starts from</span> <i>$</i>400
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="discover__picture-scroll">
+                    <div class="scroll-down">
+    <a class="scroll-down__link" href="#"></a>
+    <img class="scroll-down__text" src="./img/discover/scroll-down-text.svg" alt="#">
+    <img class="scroll-down__icon" src="./img/discover/scroll-down-icon.svg" alt="#">
+</div>
+                </div>
+                <img class="discover__picture-img" src="./img/discover/banner.png" alt="#">
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="partners">
+    <div class="container">
+        <div class="partners__inner">
+            <h2 class="partners__title">
+                Our Travel Partner
+            </h2>
+            <div class="partners__content">
+                <img class="partners__content-imh" src="./img/partners/1.svg" alt="#">
+                <img class="partners__content-imh" src="./img/partners/2.svg" alt="#">
+                <img class="partners__content-imh" src="./img/partners/3.svg" alt="#">
+                <img class="partners__content-imh" src="./img/partners/4.svg" alt="#">
+                <img class="partners__content-imh" src="./img/partners/5.svg" alt="#">
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="popular">
+    <div class="container">
+        <div class="popular__top">
+            <div class="popular__text">
+                <h2 class="popular__title">
+                    Popular Destinations
+                </h2>
+                <p class="popular__subtitle">
+                    See our popular destinations that our client choose
+                </p>
+            </div>
+            <div class="popular__controls">
+                <button class="popular__btn btn-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="#B9B9B9"/>
+                    </svg>                        
+                </button>
+                <button class="popular__btn btn-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#B9B9B9"/>
+                    </svg>                                              
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-right">
+        <div class="popular__slider">
+
+            <div class="card">
+                <a class="card__link" href="#"></a>
+                <div class="card__img">
+                    <img src="./img/popular/1.jpg" alt="#">
+                </div>
+                <div class="card__title-wrapper">
+                    <h3 class="card__title">
+                        Venice, Italy
+                    </h3>
+                    <div class="card__rating">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="card__price">
+                    <span class="muted">Starts from</span> <i>$</i>900
+                </div>
+            </div>
+            <div class="card">
+                <a class="card__link" href="#"></a>
+                <div class="card__img">
+                    <img src="./img/popular/2.jpg" alt="#">
+                </div>
+                <div class="card__title-wrapper">
+                    <h3 class="card__title">
+                        Bali, Indonesia
+                    </h3>
+                    <div class="card__rating">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="card__price">
+                    <span class="muted">Starts from</span> <i>$</i>480
+                </div>
+            </div>
+            <div class="card">
+                <a class="card__link" href="#"></a>
+                <div class="card__img">
+                    <img src="./img/popular/3.jpg" alt="#">
+                </div>
+                <div class="card__title-wrapper">
+                    <h3 class="card__title">
+                        Bangkok, Thailand
+                    </h3>
+                    <div class="card__rating">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="card__price">
+                    <span class="muted">Starts from</span> <i>$</i>440
+                </div>
+            </div>
+            <div class="card">
+                <a class="card__link" href="#"></a>
+                <div class="card__img">
+                    <img src="./img/popular/4.jpg" alt="#">
+                </div>
+                <div class="card__title-wrapper">
+                    <h3 class="card__title">
+                        Santorini, Greek
+                    </h3>
+                    <div class="card__rating">
+                        (4.5)
+                    </div>
+                </div>
+                <div class="card__price">
+                    <span class="muted">Starts from</span> <i>$</i>900
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+		<footer class="footer">
+	<div class="container">
+		<h2>Footer</h2>
+	</div>
+</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

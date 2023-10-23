@@ -1,0 +1,74 @@
+.hint-discover {
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 324px;
+
+    &__picture {
+        border-radius: 8px;
+    }
+
+    &__img {
+        border-radius: 8px;
+        max-width: 58px;
+    }
+
+    &__desc {
+        flex-grow: 1;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-bottom: 4px;
+        gap: 38px;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 4px;
+        font-size: 14px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            left: -20px;
+            top: 4px;
+            background-image: url('../img/discover/hint-discover/star.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__price {
+        display: inline;
+
+        .muted {
+            color: var(--secondaryText);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 150%; /* 24px */
+        }
+
+        i {
+            color: var(--accent);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+}

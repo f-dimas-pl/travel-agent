@@ -1,0 +1,23 @@
+.partners {
+    padding: 60px 0px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 48px;
+    }
+
+    &__title {
+        color: var(--secondaryText);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}

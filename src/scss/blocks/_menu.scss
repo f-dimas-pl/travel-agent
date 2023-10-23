@@ -1,0 +1,58 @@
+.logo {
+    &__img {
+        // С помощью следующего
+        // свойства, мы убираем
+        // отступы у картинки,
+        // которая лежит внтури ссылки
+        display: block;
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    &__list {
+        display: flex;
+        column-gap: 24px;
+
+        &-link {
+            color: var(--primaryText);
+            font-size: 16px;
+            font-weight: 450;
+            line-height: 150%;
+            @extend %tr;
+
+            &:hover {
+                color: var(--accent);
+            }
+        }
+
+        &-link--active {
+            color: var(--accent);
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+}
+
+.btn-login{
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--secondaryText);
+    color: var(--secondaryText);
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 150%;
+    background: transparent;
+
+    &:hover {
+        color: #fff;
+        background: var(--primaryText);
+    }
+}

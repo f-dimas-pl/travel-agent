@@ -1,0 +1,70 @@
+.popular {
+    padding: 60px 0px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__subtitle {
+        color: var(--secondaryText);
+        font-size: 18px;
+        font-weight: 450;
+        line-height: 150%; /* 27px */
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+// transition popular__btn
+.popular__btn {
+    svg {
+        @extend %tr;
+    }
+}
+
+.popular__btn {
+    border: 1px solid var(--secondaryText);
+    border-radius: 50%;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %tr;
+
+    &:hover {
+        background: var(--accent);
+
+        path {
+            fill: #fff;
+        }
+    }
+
+    &:focus {
+        background: var(--accent);
+        position: relative;
+        bottom: -2px;
+
+        path {
+            fill: #fff;
+        }
+    }
+}
